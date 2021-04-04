@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EmailService
+namespace My.ProjectName.Services.EmailService
 {
     public class Message
     {

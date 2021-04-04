@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmailService
+namespace My.ProjectName.Services.EmailService
 {
     public class EmailSender : IEmailSender
     {

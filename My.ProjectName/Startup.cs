@@ -1,4 +1,4 @@
-using EmailService;
+using My.ProjectName.Services.EmailService;
 using My.ProjectName.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

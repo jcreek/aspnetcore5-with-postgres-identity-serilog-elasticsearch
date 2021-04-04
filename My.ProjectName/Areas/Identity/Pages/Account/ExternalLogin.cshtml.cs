@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using EmailService;
+using My.ProjectName.Services.EmailService;
 
 namespace My.ProjectName.Areas.Identity.Pages.Account
 {
@@ -22,14 +22,14 @@ namespace My.ProjectName.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly EmailService.IEmailSender _emailSender;
+        private readonly Services.EmailService.IEmailSender _emailSender;
         private readonly ILogger<ExternalLoginModel> _logger;
 
         public ExternalLoginModel(
             SignInManager<IdentityUser> signInManager,
             UserManager<IdentityUser> userManager,
             ILogger<ExternalLoginModel> logger,
-            EmailService.IEmailSender emailSender)
+            Services.EmailService.IEmailSender emailSender)
         {
             _signInManager = signInManager;
             _userManager = userManager;

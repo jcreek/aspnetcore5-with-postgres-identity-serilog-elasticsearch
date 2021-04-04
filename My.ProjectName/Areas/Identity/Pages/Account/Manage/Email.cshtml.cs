@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using EmailService;
+using My.ProjectName.Services.EmailService;
 
 namespace My.ProjectName.Areas.Identity.Pages.Account.Manage
 {
@@ -18,12 +18,12 @@ namespace My.ProjectName.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly EmailService.IEmailSender _emailSender;
+        private readonly Services.EmailService.IEmailSender _emailSender;
 
         public EmailModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
-            EmailService.IEmailSender emailSender)
+            Services.EmailService.IEmailSender emailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
